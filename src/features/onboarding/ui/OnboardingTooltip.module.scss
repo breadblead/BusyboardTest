@@ -1,0 +1,92 @@
+@use '@shared/styles/variables' as vars;
+
+.tooltip {
+  position: relative;
+  width: 360px;
+  padding: 20px;
+  border-radius: 12px;
+  background: vars.$color-white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  font-family: vars.$font-family-base;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: vars.$color-gray-muted;
+  cursor: pointer;
+}
+
+.closeIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.title {
+  padding-right: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  color: vars.$color-black;
+  margin-bottom: 8px;
+}
+
+.content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: vars.$color-gray;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.progress {
+  font-size: 13px;
+  color: vars.$color-gray-muted;
+  white-space: nowrap;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.backButton {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid vars.$color-gray-light;
+  background: vars.$color-white;
+  color: vars.$color-black;
+  font-family: vars.$font-family-base;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nextButton {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: none;
+  background: vars.$color-primary;
+  color: vars.$color-white;
+  font-family: vars.$font-family-base;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}

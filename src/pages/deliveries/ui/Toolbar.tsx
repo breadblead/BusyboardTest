@@ -27,11 +27,11 @@ export const Toolbar = () => {
       </div>
 
       <div className={styles.group}>
-        <button type="button" className={styles.actionButton}>
+        <button type="button" className={styles.actionButton} data-tour="download-api">
           <Download className={styles.actionIcon} />
           Загрузить по API
         </button>
-        <button type="button" className={styles.actionButton}>
+        <button type="button" className={styles.actionButton} data-tour="create-request">
           <Plus className={styles.actionIcon} />
           Заявка на поставку
         </button>

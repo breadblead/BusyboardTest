@@ -19,7 +19,7 @@ const COLUMNS = [
 
 export const DeliveriesTable = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} data-tour="deliveries-table">
       <table className={styles.table}>
         <thead>
           <tr>
