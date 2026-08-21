@@ -1,0 +1,117 @@
+@use '@shared/styles/variables' as vars;
+
+.wrapper {
+  margin: 0 20px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(220, 231, 241, 0.27);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.fieldFixed {
+  flex: 0 0 250px;
+  width: 250px;
+}
+
+.fieldFlex {
+  flex: 1 1 0;
+}
+
+.label {
+  font-family: vars.$font-family-base;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: vars.$color-black;
+}
+
+.control {
+  height: 46px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: vars.$color-white;
+  border: 1px solid vars.$color-gray-light;
+  border-radius: 8px;
+}
+
+.controlActive {
+  border-color: vars.$color-primary;
+}
+
+.value {
+  font-family: vars.$font-family-base;
+  font-weight: 400;
+  font-size: 14px;
+  color: vars.$color-black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.placeholder {
+  color: vars.$color-gray-muted;
+}
+
+.chevron {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+}
+
+.chevronUp {
+  transform: rotate(180deg);
+}
+
+.pills {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.pill {
+  width: 200px;
+  height: 32px;
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border: none;
+  background: vars.$color-gray-light;
+  color: vars.$color-gray;
+  font-family: vars.$font-family-base;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+
+.pillActive {
+  background: vars.$color-primary;
+  color: vars.$color-white;
+}

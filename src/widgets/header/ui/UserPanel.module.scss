@@ -1,0 +1,109 @@
+@use '@shared/styles/variables' as vars;
+
+.panel {
+  display: flex;
+  align-items: center;
+}
+
+.orgSelector {
+  width: 200px;
+  height: 55px;
+  padding: 19px 2px;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.orgName {
+  width: 164px;
+  height: 17px;
+  font-family: vars.$font-family-base;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-align: right;
+  color: vars.$color-black;
+}
+
+.chevron {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  transform: translateY(-2px);
+}
+
+.iconGroup {
+  width: 144px;
+  height: 40px;
+  min-width: 144px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.bookButton {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bookIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.bellButton {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  padding: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: vars.$color-gray-light;
+  }
+}
+
+.bellIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.avatarButton {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  gap: 10px;
+  padding: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.avatarCircle {
+  width: 32px;
+  height: 32px;
+}

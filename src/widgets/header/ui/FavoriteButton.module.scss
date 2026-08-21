@@ -1,0 +1,31 @@
+@use '@shared/styles/variables' as vars;
+
+.favorite {
+  width: 132px;
+  height: 40px;
+  padding: 8px 10px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid vars.$color-gray-light;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: auto;
+  min-width: 24px;
+}
+
+.label {
+  font-family: vars.$font-family-base;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: vars.$color-black;
+}

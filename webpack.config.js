@@ -5,7 +5,7 @@ module.exports = (env, argv) => {
   const isDev = argv.mode !== 'production';
 
   return {
-    entry: path.resolve(__dirname, 'src/index.tsx'),
+    entry: path.resolve(__dirname, 'src/app/index.tsx'),
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: isDev ? '[name].js' : '[name].[contenthash].js',
@@ -32,12 +32,51 @@ module.exports = (env, argv) => {
           use: 'babel-loader',
         },
         {
+          test: /\.module\.scss$/,
+          use: [
+            'style-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                modules: {
+                  namedExport: false,
+                  localIdentName: isDev ? '[name]__[local]' : '[hash:base64:8]',
+                },
+              },
+            },
+            'sass-loader',
+          ],
+        },
+        {
           test: /\.scss$/,
+          exclude: /\.module\.scss$/,
           use: ['style-loader', 'css-loader', 'sass-loader'],
         },
         {
           test: /\.css$/,
           use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.svg$/,
+          use: [
+            {
+              loader: '@svgr/webpack',
+              options: {
+                svgoConfig: {
+                  plugins: [
+                    {
+                      name: 'preset-default',
+                      params: {
+                        overrides: {
+                          removeViewBox: false,
+                        },
+                      },
+                    },
+                  ],
+                },
+              },
+            },
+          ],
         },
       ],
     },

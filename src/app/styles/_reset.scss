@@ -1,0 +1,19 @@
+@use '../../shared/styles/variables' as vars;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: vars.$font-family-base;
+  color: vars.$color-text;
+  background-color: vars.$color-bg;
+}

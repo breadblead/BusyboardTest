@@ -1,0 +1,39 @@
+@use '@shared/styles/variables' as vars;
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: vars.$color-bg-muted;
+  padding: 10px 20px 20px;
+}
+
+.titleTab {
+  margin: 0;
+  width: fit-content;
+  height: 30px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  background: vars.$color-gray-light;
+  border-radius: 9px 9px 0 0;
+  font-family: vars.$font-family-base;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: vars.$color-gray;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+  background: vars.$color-white;
+  border-radius: 0 8px 8px 8px;
+  outline: 0.5px solid vars.$color-gray-light;
+  outline-offset: -0.5px;
+  overflow: hidden;
+}

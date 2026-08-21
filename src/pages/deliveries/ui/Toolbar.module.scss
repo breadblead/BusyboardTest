@@ -1,0 +1,98 @@
+@use '@shared/styles/variables' as vars;
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filterButton {
+  width: 140px;
+  min-width: 140px;
+  height: 46px;
+  padding: 13px 20px;
+  border-radius: 8px;
+  border: none;
+  background: vars.$color-primary;
+  color: vars.$color-white;
+  font-family: vars.$font-family-base;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.tintButton {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: none;
+  background: vars.$color-blue-light;
+  color: vars.$color-black;
+  cursor: pointer;
+}
+
+.tintIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.actionButton {
+  height: 46px;
+  min-width: 140px;
+  padding: 12px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 8px;
+  border: none;
+  background: vars.$color-primary;
+  color: vars.$color-white;
+  font-family: vars.$font-family-base;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.actionIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.gearButton {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: vars.$color-white;
+  outline: 1px solid vars.$color-gray-light;
+  outline-offset: -1px;
+  border: none;
+  color: vars.$color-black;
+  cursor: pointer;
+}
+
+.gearIcon {
+  width: 24px;
+  height: 24px;
+}

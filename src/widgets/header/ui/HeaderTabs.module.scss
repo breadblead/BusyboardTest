@@ -1,0 +1,32 @@
+@use '@shared/styles/variables' as vars;
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+}
+
+.tab {
+  height: 56px;
+  padding: 0 5px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  font-family: vars.$font-family-base;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: vars.$color-black;
+}
+
+.tabActive {
+  border-bottom-color: vars.$color-primary;
+}
