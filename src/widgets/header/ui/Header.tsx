@@ -3,7 +3,6 @@ import React from 'react';
 import Logo from '../img/logo.svg';
 import { FavoriteButton } from './FavoriteButton';
 import { HeaderTabs } from './HeaderTabs';
-import { HeaderActions } from './HeaderActions';
 import { UserPanel } from './UserPanel';
 import styles from './Header.module.scss';
 
@@ -17,8 +16,6 @@ export const Header = () => {
           <HeaderTabs />
         </nav>
       </div>
-
-      <HeaderActions />
 
       <UserPanel />
     </header>
